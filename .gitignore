@@ -3,4 +3,3 @@ node_modules/
 
 # Lock file (optional, depends on your workflow)
 package-lock.json
-package.json
