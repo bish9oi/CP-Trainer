@@ -1,0 +1,41 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+section {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+#filter select,
+#filter button,
+#editorSection button {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin: 5px;
+}
+#problemsList div.problemItem {
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+  cursor: pointer;
+}
+#problemsList div.problemItem:hover {
+  background-color: #eaeaea;
+}
+#result {
+  white-space: pre-wrap;
+  background: #222;
+  color: #fff;
+  font-family: monospace;
+  padding: 10px;
+}

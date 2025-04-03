@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CP Trainer - Java Edition</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CP Trainer - Java Edition</h1>
+    </header>
+
+    <!-- Filter Section -->
+    <section id="filter">
+      <label for="topic">Topic:</label>
+      <select id="topic">
+        <option value="all">All</option>
+        <option value="dp">DP</option>
+        <option value="graphs">Graphs</option>
+        <option value="greedy">Greedy</option>
+        <option value="arrays">Arrays</option>
+        <option value="sorting">Sorting</option>
+        <option value="tree">Tree</option>
+        <option value="linkedlist">Linked List</option>
+      </select>
+
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty">
+        <option value="all">All</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+
+      <button id="loadProblems">Load Problems</button>
+    </section>
+
+    <!-- Problems List -->
+    <section id="problemsList">
+      <!-- The list of problems will be rendered here -->
+    </section>
+
+    <!-- Problem Details and Code Editor -->
+    <section id="problemDetail">
+      <!-- Problem details will be shown here -->
+    </section>
+
+    <!-- Code Editor and Run Button -->
+    <section id="editorSection">
+      <div
+        id="editorContainer"
+        style="width: 800px; height: 400px; border: 1px solid #ccc"
+      ></div>
+      <button id="runCode">Run Code</button>
+    </section>
+
+    <!-- Output Section -->
+    <section id="result"></section>
+
+    <!-- Monaco Editor Setup -->
+    <script>
+      window.require = { paths: { vs: "/node_modules/monaco-editor/min/vs" } };
+    </script>
+    <script src="/node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
